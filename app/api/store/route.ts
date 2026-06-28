@@ -42,7 +42,7 @@ export async function POST(request: Request) {
         
         console.log('Store API - Generated Unique Number:', uniqueNumber);
 
-        const docData: { [key: string]: any } = {
+        const docData: { [key: string]: unknown } = {
             lookupKey,
             uniqueNumber,
             salt,
